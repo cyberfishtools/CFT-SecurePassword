@@ -1,5 +1,7 @@
 # PasswordGenerator
 Console Application that takes 3 strings and creates a secure password.
+ This will generate a password based on the first name(s), last name and Random ID of a person.
+
 # PasswordGenerator
 
 In **Generator class** you will find **PasswordGenerator()** method, by using this you can generate random passwords with uppercase/lowercase letters, also numbers.
