@@ -5,8 +5,7 @@ Console Application that takes 3 strings and creates a secure password.
 # PasswordGenerator
 
 **PasswordGenerator()** method, by using this you can generate random passwords with uppercase letters, also numbers.
-- **generatePassword()** method uses **RNGCryptoServiceProvider class**.
-
+- **GeneratePassword()** 
 ```C#
  var workString = "1207." + firstNames.ToLower() + " " + lastName.ToUpper() + "." + bankID.ToLower() + ".0105";
                 var workBytes = System.Text.Encoding.UTF8.GetBytes(workString);
