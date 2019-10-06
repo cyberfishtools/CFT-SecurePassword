@@ -34,3 +34,16 @@ C# , .Net Framework ,netcoreapp2.1, Microsoft Visual Studio.
 
 
 
+
+ ## How to install: 
+ 1. Download -
+  ``` 
+  https://github.com/cyberfishtools/CFT-SecurePassword.git
+  ```
+  2. Open Folder - in Visual Studio
+  ```
+  Locate to project File : GeneratePassword.csproj
+  
+  ```
+# Donate
+Donate generously! [![Support](https://www.buymeacoffee.com/assets/img/custom_images/white_img.png)](https://www.buymeacoffee.com/maheshnama098)
