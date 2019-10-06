@@ -8,12 +8,12 @@ namespace CybSecure
     {
 
         /// <summary>
-        /// This will generate a password based on the first name(s), last name and bank ID
+        /// This will generate a password based on the first name(s), last name and Random ID
         /// of a person.
         /// </summary>
         /// <param name="first">The first name(s) of the person, space seperated</param>
         /// <param name="second">The Person's last name</param>
-        /// <param name="third">The person's bank ID</param>
+        /// <param name="third">The person's Random ID</param>
         /// <returns>The password as a string, except if an exception is thrown</returns>
 
         public static string generatePassword(string firstNames, string lastName, string bankID)
