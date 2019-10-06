@@ -45,5 +45,13 @@ C# , .Net Framework ,netcoreapp2.1, Microsoft Visual Studio.
   Locate to project File : GeneratePassword.csproj
   
   ```
+   3. Open Folder - in Visual Studio
+   
+  ```
+  Run the File GeneratePassword.csproj
+  and enter 3 strings as mentioned to Generate secured password.
+  ```
+   
+
 # Donate
 Donate generously! [![Support](https://www.buymeacoffee.com/assets/img/custom_images/white_img.png)](https://www.buymeacoffee.com/maheshnama098)
