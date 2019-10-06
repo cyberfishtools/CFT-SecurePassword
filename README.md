@@ -1,32 +1,24 @@
-# PasswordGenerator
+
 Console Application that takes 3 strings and creates a secure password.
  This will generate a password based on the first name(s), last name and Random ID of a person.
 
 # PasswordGenerator
 
-In **Generator class** you will find **PasswordGenerator()** method, by using this you can generate random passwords with uppercase/lowercase letters, also numbers.
-- **PasswordGenerator()** method uses **RNGCryptoServiceProvider class**.
+**PasswordGenerator()** method, by using this you can generate random passwords with uppercase letters, also numbers.
+- **generatePassword()** method uses **RNGCryptoServiceProvider class**.
 
 ```C#
-using (var rng = new RNGCryptoServiceProvider())
-{
- var data = new byte[4];
- rng.GetBytes(data);
- var seed = BitConverter.ToInt32(data, 0);
- var rnd = new Random(seed);
-
- string password = string.Empty;
-
-for (int i = 0; i < length; i++)
-{
- if (rnd.Next(1, 4) == 1)
-     password += (char)rnd.Next(48, 57);
- else if (rnd.Next(1, 4) == 2)
-     password += (char)rnd.Next(65, 90);
- else
-     password += (char)rnd.Next(97, 122);
-}
- return password;
+ var workString = "1207." + firstNames.ToLower() + " " + lastName.ToUpper() + "." + bankID.ToLower() + ".0105";
+                var workBytes = System.Text.Encoding.UTF8.GetBytes(workString);
+                using (var sha = System.Security.Cryptography.SHA256.Create())
+                {
+                    // use only a 3rd of the hash for the password
+                    var passwordLength = (sha.HashSize / 8) / 3;
+                    var hashPart = new byte[passwordLength];
+                    System.Array.Copy(sha.ComputeHash(workBytes), 2, hashPart, 0, passwordLength);
+                    // remove the dashes
+                    return BitConverter.ToString(hashPart).Replace("-", "");
+                }
               
 ```
 
@@ -37,7 +29,8 @@ Console.WriteLine(Generator.PasswordGenerator(10));
 ```
 
 #Keywords
-C# 6.0, .Net Framework 4.6, Microsoft Visual Studio.
+Project Sdk="Microsoft.NET.Sdk"
+C# , .Net Framework ,netcoreapp2.1, Microsoft Visual Studio.
 
 
 
