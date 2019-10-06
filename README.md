@@ -22,7 +22,7 @@ Console Application that takes 3 strings and creates a secure password.
               
 ```
 
-Using **UserProgram class** you can execute the program, simply write the required length of password you want to generate, instead of 10. 
+Using **GeneratePassword class** you can execute the program, simply enter the 3 strings and  program uses SHA 256 to generate password. 
 
 ```C# 
 Console.WriteLine(Generator.PasswordGenerator(10));
