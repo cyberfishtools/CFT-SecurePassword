@@ -35,7 +35,7 @@ C# , .Net Framework ,netcoreapp2.1, Microsoft Visual Studio.
 
 
 
- ## How to install: 
+ ## How to Run: 
  1. Download -
   ``` 
   https://github.com/cyberfishtools/CFT-SecurePassword.git
